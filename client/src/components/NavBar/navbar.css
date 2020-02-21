@@ -2,6 +2,10 @@
 
 .navbar {
   line-height: 1.75;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
   padding: 10px 20px;
   background: #007bff;
   color: #fff;
@@ -14,6 +18,7 @@ div.navbar-links span {
   font-size: 18px;
   padding: 0 5px;
   cursor: pointer;
+
   display: none;
 }
 
@@ -39,14 +44,18 @@ div.navbar-links span {
   transition: 0.5s ease-in;
 }
 
-div.navbar-title {
-  font-family: sans-serif;
-}
-
 div.navbar-title a {
   font-size: 1.3rem;
   text-decoration: none;
   color: #fff;
+  
+}
+
+div.navbar-title {
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+
 }
 
 .navbar-signUp,
@@ -81,3 +90,4 @@ div.navbar-title a {
   width: 100%;
   z-index: 1;
 }
+

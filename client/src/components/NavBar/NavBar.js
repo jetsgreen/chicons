@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { Link, Redirect } from "react-router-dom";
 import { fire, facebookProvider, googleProvider } from '../../config/Firebase';
@@ -206,4 +207,4 @@ class NavBar extends Component {
 
 export default NavBar;
 
-// When user's loggin out redirect them to the home page
+
