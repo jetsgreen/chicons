@@ -22,5 +22,12 @@ export default {
   // Saves a apartment to the database
   saveApartment: function(apartmentData) {
     return axios.post("/api/apartments", apartmentData);
-  }
+  },
+  setSavedApartments: function (id) {
+    return axios.put("/api/apartments/" + id);
+    
+},
+favedApartments: function() {
+  return axios.get("/api/apartments/test")
+}
 };

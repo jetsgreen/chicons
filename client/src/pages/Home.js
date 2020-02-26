@@ -25,7 +25,7 @@ class Home extends Component {
                lng: userLng
             }
 
-            infoWindow = new google.maps.InfoWindow;
+            infoWindow = new google.maps.InfoWindow();
             map = new google.maps.Map(document.getElementById('map'), {
                center: {
                   lat: userLat,

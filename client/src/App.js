@@ -6,6 +6,7 @@ import Poster from "./pages/Poster";
 import Seeker from "./pages/Seeker";
 import Favorites from "./pages/Favorites";
 
+
 function App() {
   return (
     <Router>
@@ -13,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/apartments" component={Poster} />
-          <Route exact path="/api" component={Seeker} />
+          <Route exact path="/seeker" component={Seeker} />
           <Route exact path="/favorites" component={Favorites} />
         </Switch>
       </div>
