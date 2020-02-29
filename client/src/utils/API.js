@@ -1,7 +1,5 @@
 import axios from "axios";
-
 // const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
-
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -12,7 +10,6 @@ var settings = {
     "x-rapidapi-key": "1521e56929msha8bd212f0c69f5fp1dd6e5jsn32350828c5c5"
   }
 }
-
 export default {
   // testing 
   // searchApartments: (address, city, state) => axios.get(`${BASEURL},+${address}, ${city},+${state},+${APIKEY}`),
@@ -35,25 +32,13 @@ export default {
   saveApartment: function (apartmentData) {
     return axios.post("/api/apartments", apartmentData);
   },
-
   setSavedApartments: function (id) {
-   return axios.put("/api/apartments/" + id);
-    
-},
-favedApartments: function() {
+   return axios.put("/api/apartments/" + id);  
+  },
+  favedApartments: function() {
   return axios.get("/api/apartments/test")
-},
-
+  },
   searchApartments(search) {
     return axios.get("/api/apartments/google/" + search)
   },
-
-  // firebaseKey(apiKey) {
-  //   console.log(axios.get("/api/apartments/firebase"));
-
-  //   return axios.get("/api/apartments/firebase/", apiKey);
-  // }
-
 };
-
-// 234 52nd St West New York, New Jersey 
