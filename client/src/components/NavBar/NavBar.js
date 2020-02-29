@@ -205,7 +205,7 @@ class NavBar extends Component {
                            Apartments
                         </Link>
 
-                        <Link to="/api" className={window.location.pathname === "/api" ? "navbarTabsLink" : "favoritesLinkClick"}>
+                        <Link to="/seeker" className={window.location.pathname === "/seeker" ? "navbarTabsLink" : "favoritesLinkClick"}>
                            Seeker
                         </Link>
                      </div>

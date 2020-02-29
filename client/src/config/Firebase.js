@@ -2,7 +2,7 @@ import firebase from 'firebase';
 import API from '../utils/API';
 
 const firebaseConfig = {
-   apiKey: "", // throw env.API key here 
+   apiKey: "AIzaSyDqxhTMQT80qfWlyrqqRi19ahFLwM5bSRo", // throw env.API key here 
    authDomain: "chicons-c4c7d.firebaseapp.com",
    databaseURL: "https://chicons-c4c7d.firebaseio.com",
    projectId: "chicons-c4c7d",

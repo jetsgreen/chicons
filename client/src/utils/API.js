@@ -1,16 +1,29 @@
 import axios from "axios";
 
-const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
+// const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://realtymole-rental-estimate-v1.p.rapidapi.com/rentalPrice?address=21%20Jefferson%20Ave%20Jersey%20City%20NJ&compCount=5",
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "realtymole-rental-estimate-v1.p.rapidapi.com",
+    "x-rapidapi-key": "1521e56929msha8bd212f0c69f5fp1dd6e5jsn32350828c5c5"
+  }
+}
 
 export default {
   // testing 
   // searchApartments: (address, city, state) => axios.get(`${BASEURL},+${address}, ${city},+${state},+${APIKEY}`),
-
-  // Gets all books
+  search: function () {
+    return axios(settings);
+  },
+  // Gets all apartments
   getApartments: function () {
     return axios.get("/api/apartments");
   },
-  // Gets the book with the given id
+  // Gets the apartment with the given id
   getApartment: function (id) {
     return axios.get("/api/apartments/" + id);
   },
@@ -29,7 +42,7 @@ export default {
 },
 favedApartments: function() {
   return axios.get("/api/apartments/test")
-}
+},
 
   searchApartments(search) {
     return axios.get("/api/apartments/google/" + search)

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Poster from "./pages/Poster";
 import Seeker from "./pages/Seeker";
 import Favorites from "./pages/Favorites";
+import Second from "./pages/Second"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/apartments" component={Poster} />
           <Route exact path="/seeker" component={Seeker} />
           <Route exact path="/favorites" component={Favorites} />
+          <Route exact path="/api" component={Second}/>
         </Switch>
       </div>
     </Router>
