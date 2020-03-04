@@ -87,6 +87,7 @@ class Seeker extends Component {
                                     <Row className="buttonDiv ">
                                        <button className="btn btn-primary" onClick={() => this.handleSavedButton(apartment._id)} >Add To Favs</button>
                                        <a href="#" target="_blank">
+                                         
                                           <button className="viewApartment btn btn-success">
                                              View Apt
                                         </button>
@@ -98,7 +99,7 @@ class Seeker extends Component {
                            ))}
                         </li>
                      ) : (
-                           <h3>No Results to Display</h3>
+                           <h3></h3>
                         )}
                   </Col>
                </Row>
