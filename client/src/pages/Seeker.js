@@ -4,6 +4,7 @@ import { JumbotronApartments } from "../components/Jumbotron/Jumbotron";
 import API from "../utils/API"
 import { Col, Row, Container } from "../components/Grid/Grid"
 import Image from "../components/SeekerImage/image"
+import Footer from "../components/Footer/footer"
 
 
 
@@ -100,6 +101,7 @@ class Seeker extends Component {
                   </Col>
                </Row>
             </Container>
+            <Footer/>
 
          </div>
          
